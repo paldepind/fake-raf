@@ -1,0 +1,26 @@
+{
+  "name": "fake-raf",
+  "version": "0.0.1",
+  "description": "A fake requestAnimationFrame perfect for unit testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paldepind/fake-raf.git"
+  },
+  "keywords": [
+    "requestanimationframe",
+    "stub",
+    "mockup",
+    "fake",
+    "raf"
+  ],
+  "author": "Simon Friis Vindum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paldepind/fake-raf/issues"
+  },
+  "homepage": "https://github.com/paldepind/fake-raf"
+}
