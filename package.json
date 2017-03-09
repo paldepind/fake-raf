@@ -1,6 +1,6 @@
 {
   "name": "fake-raf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fake requestAnimationFrame. Perfect for unit testing.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
