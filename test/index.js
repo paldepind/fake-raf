@@ -1,7 +1,5 @@
-console.log('wtf');
-
 var assert = require('assert');
-var fakeRaf = require('../index.js');
+var fakeRaf = require('../dist/index.js');
 
 describe('fakeRaf', function() {
   it('can load and restore', function() {

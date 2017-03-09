@@ -2,9 +2,15 @@
   "name": "fake-raf",
   "version": "1.0.0",
   "description": "A fake requestAnimationFrame. Perfect for unit testing.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "testem"
+    "test": "testem",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "release-major": "./node_modules/.bin/xyz --repo git@github.com:paldepind/fake-raf.git --increment major",
+    "release-minor": "./node_modules/.bin/xyz --repo git@github.com:paldepind/fake-raf.git --increment minor",
+    "release-patch": "./node_modules/.bin/xyz --repo git@github.com:paldepind/fake-raf.git --increment patch"
   },
   "repository": {
     "type": "git",
@@ -15,12 +21,16 @@
     "stub",
     "mockup",
     "fake",
-    "raf"
+    "raf",
+    "typescript"
   ],
   "author": "Simon Friis Vindum",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paldepind/fake-raf/issues"
   },
-  "homepage": "https://github.com/paldepind/fake-raf"
+  "homepage": "https://github.com/paldepind/fake-raf",
+  "devDependencies": {
+    "xyz": "^2.1.0"
+  }
 }
